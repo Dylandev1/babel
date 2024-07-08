@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d32oux1yg4bm2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mchji"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_yaobj"]
+
+[node name="RigidBody2D" type="RigidBody2D"]
+lock_rotation = true
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_mchji")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+scale = Vector2(20, 20)
+texture = SubResource("CanvasTexture_yaobj")
